@@ -79,7 +79,7 @@ const SelectTeam = () => {
                     <img
                       src={league.leagueLogo}
                       alt={`${league.leagueName} Logo`}
-                      className="h-18 w-8 md:h-10 md:w-10"
+                      className="h-8 w-8 md:h-10 md:w-10"
                     />
                   </div>
                   <h3 className="font-semibold text-lg mt-4 mb-2">
