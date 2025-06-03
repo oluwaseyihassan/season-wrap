@@ -27,7 +27,7 @@ const Navbar = () => {
     <motion.header
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.2 }}
       className={`${
         scrolled ? "py-3  bg-white shadow-md" : "bg-transparent py-4"
       } sticky top-0 left-0 right-0 transition-all duration-300  px-4  z-50  `}

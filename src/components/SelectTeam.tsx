@@ -61,11 +61,11 @@ const SelectTeam = () => {
       </p>
       <section>
         <h2 className="font-bold text-xl md:text-2xl text-center">Top Teams</h2>
-        <div className="shadow-soft p-4 rounded-lg mt-4 space-y-4 my-8">
+        <div className="shadow-soft py-2 rounded-lg mt-4 space-y-4 my-8 divide-y-2 divide-gray-100">
           {LeagueTeams.map((league, index) => (
             <div key={index}>
               <div
-                className="flex items-center gap-4 mb-4 cursor-pointer hover:scale-[101%] transition-all duration-200 rounded-md p-2"
+                className="flex items-center gap-4 mb-4 cursor-pointer hover:scale-[101%] transition-all duration-200 rounded-md px-4"
                 onClick={() => {
                   if (openLeague === league.leagueName) {
                     setOpenLeague(null);
@@ -99,7 +99,7 @@ const SelectTeam = () => {
                     animate={{ height: "auto", opacity: 1 }}
                     transition={{ duration: 0.2 }}
                     exit={{ height: 0 }}
-                    className={` grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 overflow-hidden p-2`}
+                    className={` grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 overflow-hidden py-2 px-4 `}
                   >
                     {league.teams.map((team) => (
                       <div

@@ -6,6 +6,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/select-team" element={<SelectTeamPage />} />
+      <Route path="/team/:id" element={<div>team</div>}/>
     </Routes>
   );
 }
